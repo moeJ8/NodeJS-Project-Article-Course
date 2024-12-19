@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Articles</h1>
+    <hr>
+    <div style="background-color: lightgray; font-family: Arial, Helvetica, sans-serif; color: black; padding: 10px; margin: 10px; border-radius: 10px;">
+        <% articles.forEach(article => { %>
+            <h2 style="background: darkgray; padding: 10px; margin: 10px; border-radius: 10px;"><%= article.title %></h2>
+            <p style=" padding: 10px; margin: 10px; border-radius: 10px;"><%= article.body %></p>
+            <p style=" padding: 10px; margin: 10px; border-radius: 10px;"><%= article.numberOfLikes %></p>
+            <hr>
+            <br>
+        <% }); %>
+    </div>
+</body>
+</html>
